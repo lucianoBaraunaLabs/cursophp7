@@ -96,7 +96,7 @@ echo $nome . " " . $sobrenome // Song Goku
 2. Null
 
 
-### Variáveis super globais
+### Variáveis super globais ou pré-definidas
 
 #### $_GET["foo"]
 È um array que retorna o valor do parâmetro passado em `foo` na url. Esse valor sempre é retornado como string.
@@ -111,6 +111,31 @@ $valor = (int)$_GET["valor"]; // http://localhost/cursophp7/ex-code/variaveis/ex
 
 var_dump($valor) // number(4) "1234"
 
-
 ```
+
+### Escopo de variáveis
+As variáveis em php respeitam seu escopo dentro de funções.
+para conseguir acesso as variáveies fora do escopo é preciso utilizar a palavra `global`
+```
+<?php
+
+$nome = 'Goku';
+
+function teste() {
+    global $nome;
+    echo $nome.'<br />';
+}
+
+function teste2() {
+    $nome = 'Vegeta';
+    echo $nome.' '.'agora no teste2';
+}
+
+teste();
+teste2();
+
+
+?>
+```
+
 
