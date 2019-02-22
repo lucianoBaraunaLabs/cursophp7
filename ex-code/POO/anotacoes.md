@@ -163,7 +163,7 @@ public function __toString() {
 }
 ```
 
-### Encapsulamento
+### Encapsulamento e Herança
 Os atributos como `public protected e private` são expostos no seguinte caso.
 
 - `public`: todos vêem.
@@ -188,6 +188,9 @@ public function verDados()
     }
 }
 ```
+**Para herdar uma class precisamos colocar após o nome `extends`**. Quando herdamos
+tudo uma `class` nós temos acessos a todos os métodos e atributos desde que não sejam privados.
+
 No exemplo abaixo temos o atributo `senha` sendo definido como privado na class 
 `Pessoa`. Senha está sendo extendida para `Programador` e mesmo tendo um método
 público para ver os dados em `Programador` o atributo `senha` não será mostrado. :
