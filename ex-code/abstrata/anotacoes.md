@@ -17,5 +17,5 @@ abstract class Foo
 É mais uma forma de organização.
 
 ### Diferença entra Abstract e Interface
-A diferença é que uma classe só vai herdar de uma class abstrata mas uma classe poder
-herdar várias interfaces
+A diferença é que uma classe só herda uma vez a class abstrata mas uma classe poder
+herdar várias interfaces.

@@ -8,6 +8,17 @@ palavra reservada `parent` e  mesmo dentro de um método polimorfico.
 
 Ex:
 ```
+
+abstract class Animal {
+	public function falar(){
+		return "Som";
+	}
+	public function mover(){
+		return "Anda";
+	}
+}
+
+
 class Passaro extends Animal {
 	public function falar(){
 		return "Canta";
