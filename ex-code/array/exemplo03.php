@@ -3,8 +3,8 @@
 $pessoas = array();
 
 array_push($pessoas, array(
-    'nome'=>'João',
-    'idade'=>20
+    'João',
+    20
 ));
 
 array_push($pessoas, array(
@@ -12,7 +12,7 @@ array_push($pessoas, array(
     'idade'=>25
 ));
 
-print_r($pessoas);
-print_r($pessoas[0]["nome"]);
+// print_r($pessoas);
+print_r($pessoas[0][0]);
 
 ?>
