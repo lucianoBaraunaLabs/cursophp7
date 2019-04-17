@@ -1,0 +1,15 @@
+{
+    "name": "luciano/hcodecomposer",
+    "description": "Projeto do curso hcodephp7",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Luciano Baraúna",
+            "email": "baraunaluciano@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
