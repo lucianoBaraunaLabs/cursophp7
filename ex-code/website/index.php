@@ -6,12 +6,12 @@
     $app = new \Slim\Slim();
 
     // Criando uma rota com o get com o parâmetro name
-    // $app->get('/', function ()
-    // {
-    //     echo "Home page ", json_encode(array(
-    //         'date'=>date("Y-m-d H:i:s")
-    //     ));
-    // });
+    $app->get('/', function ()
+    {
+        echo "Home page ", json_encode(array(
+            'date'=>date("Y-m-d H:i:s")
+        ));
+    });
 
     // Criando uma rota com o get com o parâmetro name
     $app->get('/hello/:name', function ($name)
