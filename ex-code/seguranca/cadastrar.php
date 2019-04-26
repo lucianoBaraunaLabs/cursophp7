@@ -16,7 +16,7 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 // $_SERVER['REMOTE_ADDR'] pega o ip do usuário
 
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array(
-    'secret'   => '6LewF6AUAAAAAN0KbRqIW-9Pkt7j1Vovy_c4sep3', 
+    'secret'   => '', 
     'response' => $_POST["g-recaptcha-response"],
 	'remoteip' => $_SERVER['REMOTE_ADDR'] // pega o ip do usuário
 )));
